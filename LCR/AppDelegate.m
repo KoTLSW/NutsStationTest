@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-
 @interface AppDelegate ()
 
 @end
@@ -16,12 +15,31 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
 }
+
+
 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    
+    
+    
+    
+    NSLog(@"jfdkdjkafklklaljkfjlkdajklflkjajklfjklalkfjlkajklflk");
 }
+
+
+- (void)applicationDidChangeScreenParameters:(NSNotification *)notification
+{
+    //NSApplicationDidChangeScreenParametersNotification
+
+
+    NSLog(@"打印当前的值notification=%@",notification.userInfo);
+
+}
+
 
 
 @end
